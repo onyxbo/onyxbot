@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onyx Security Bot</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-gray-950 via-black to-gray-900 text-white">
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center">
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-5xl font-extrabold bg-gradient-to-r from-purple-400 to-indigo-500 bg-clip-text text-transparent">
+          Meet Onyx
+        </h1>
+        <p class="mt-6 text-lg text-gray-300">
+          Your all-in-one security bot for Discord. Keep raids, alts, and spam
+          out of your community with powerful tools.
+        </p>
+        <div class="mt-8 space-x-4">
+          <a
+            href="/login"
+            class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-xl font-semibold shadow"
+          >
+            Get Started
+          </a>
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands"
+            class="border border-purple-500 px-6 py-3 rounded-xl font-semibold hover:bg-purple-600/20"
+          >
+            Invite Onyx
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 mt-12 md:mt-0 md:ml-10">
+        <!-- Placeholder for logo/illustration -->
+        <div class="w-full h-64 bg-gradient-to-br from-purple-800 to-indigo-600 rounded-3xl shadow-lg flex items-center justify-center">
+          <span class="text-2xl font-bold">[Onyx Logo Here]</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Onyx?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800/60 rounded-2xl p-6 shadow-lg hover:bg-gray-800 hover:shadow-purple-500/30 transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-300">Anti-Raid</h3>
+          <p class="text-gray-300">Block mass joins and suspicious activity instantly.</p>
+        </div>
+        <div class="bg-gray-800/60 rounded-2xl p-6 shadow-lg hover:bg-gray-800 hover:shadow-purple-500/30 transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-300">CAPTCHA Verification</h3>
+          <p class="text-gray-300">Stop alt accounts with an interactive challenge.</p>
+        </div>
+        <div class="bg-gray-800/60 rounded-2xl p-6 shadow-lg hover:bg-gray-800 hover:shadow-purple-500/30 transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-300">Logging</h3>
+          <p class="text-gray-300">Track every action with clean, detailed audit logs.</p>
+        </div>
+        <div class="bg-gray-800/60 rounded-2xl p-6 shadow-lg hover:bg-gray-800 hover:shadow-purple-500/30 transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-300">Role Security</h3>
+          <p class="text-gray-300">Protect roles from unauthorized changes.</p>
+        </div>
+        <div class="bg-gray-800/60 rounded-2xl p-6 shadow-lg hover:bg-gray-800 hover:shadow-purple-500/30 transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-300">Alt Detection</h3>
+          <p class="text-gray-300">Detect accounts that are too new to be trusted.</p>
+        </div>
+        <div class="bg-gray-800/60 rounded-2xl p-6 shadow-lg hover:bg-gray-800 hover:shadow-purple-500/30 transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-300">Dashboard</h3>
+          <p class="text-gray-300">Easy to configure via web UI or bot commands.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center bg-black/70 border-t border-gray-800">
+      <p class="text-gray-400">
+        © <span id="year"></span> Onyx Security Bot. Built for safe communities.
+      </p>
+    </footer>
+
+    <script>
+      // Auto-update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
